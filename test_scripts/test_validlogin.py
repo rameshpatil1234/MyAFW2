@@ -26,6 +26,6 @@ class TestValidLogin(BaseTest):
         homepage=HomePage(self.driver)
         result=homepage.verify_homepage_is_displayed(self.wait)
         assert result
-        print(self.driver.title)
+
 
 
