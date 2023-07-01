@@ -21,3 +21,4 @@ class TestInValidLogin(BaseTest):
         loginpage.click_on_loginbtn()
         result=loginpage.verify_errormsg(self.wait)
         assert result
+        print(self.driver.title)
