@@ -39,7 +39,7 @@ class BaseTest:
                 print('launched firefox browser in remote system')
             self.driver=webdriver.Remote(grid_url,options=browser_options)
         self.driver.get(url)
-        self.driver.maximize_window()
+        # self.driver.maximize_window()
         self.driver.implicitly_wait(ITO)
         self.wait=WebDriverWait(self.driver,10)
         yield
